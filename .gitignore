@@ -1,0 +1,15 @@
+﻿# Secrets and environment
+set-env.ps1
+**/profiles.yml
+**/__prod__profiles/
+.env
+*.env
+
+# dbt artifacts
+target/
+dbt_packages/
+logs/
+
+# Python
+.venv/
+__pycache__/
