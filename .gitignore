@@ -1,7 +1,7 @@
-﻿# Secrets and environment
+﻿cd C:\Users\Yakub\Downloads\dbt\dbt_course
+@'
+# Secrets and environment
 set-env.ps1
-**/profiles.yml
-**/__prod__profiles/
 .env
 *.env
 
@@ -13,3 +13,4 @@ logs/
 # Python
 .venv/
 __pycache__/
+'@ | Set-Content -Path .gitignore -Encoding utf8
