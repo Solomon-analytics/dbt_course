@@ -15,6 +15,7 @@ SELECT
     END AS minimum_nights,
     host_id,
     TRY_TO_NUMBER(REPLACE(REPLACE(price_str, '$', ''), ',', ''), 10, 2) AS price,
+    price_str,
     created_at,
     updated_at
 FROM {{ ref('src_listings') }}
